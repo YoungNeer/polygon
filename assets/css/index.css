@@ -1,0 +1,160 @@
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+.newsfeed form{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.newsfeed .blueButton{
+    width: 20%;
+    margin-left: 10px;
+}
+
+.name_field{
+    display: inline-block;
+    font-size: 22px;
+    padding-left: 10px;
+    height: 30px;
+    overflow: hidden;
+}
+
+@media (max-width: 575px) {
+    .name_field{
+        width: 200px;
+    }
+}
+
+@media (max-width: 450px) {
+    .name_field{
+        width: 100px;
+    }
+}
+
+.userProfileCard{
+    margin-left:5%;
+    margin-top:120px; /*TODO*/
+    width:50%;
+    max-width:350px;
+}
+
+.newsfeed{
+    min-width: 500px;
+    margin-left: 20px;
+    margin-right: 15px;
+    width: 65%;
+    max-width:720px;
+    margin-top: 120px;
+}
+
+.trends{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .profile_user_data button{
+    display:none;
+} */
+
+@media (max-width: 1100px) {
+    .userProfileCard{
+        margin-left:0px;
+    }
+}
+
+@media (max-width: 900px) {
+    main{
+        flex-direction: column;
+    }
+    .profile_user_data button{
+        display:block;
+    }
+    .userProfileCard{
+        margin: auto 10%;
+        margin-top:120px; /*TODO*/
+        width:auto;
+        max-width:900px;
+    }
+    .newsfeed{
+        min-width:400px;
+        margin-top: 120px;
+        margin: auto 10%;
+        margin-top: 30px;
+        width:auto;
+    }
+    .trends{
+        display:none;
+    }
+}
+
+@media (max-width: 580px) {
+    .newsfeed{
+        margin-left:5%;
+        margin-right:5%;
+    }
+}
+
+@media (max-width: 500px) {
+    .userProfileCard{
+        width:100%;
+        margin-left: 0px;
+    }
+    .newsfeed{
+        margin-left:0px;
+        width:100%
+    }
+}
+
+.user_profile_pic_main{
+    border-radius: 55px;
+    width: 100px;
+}
+
+.user_details{
+    height: 215px;
+}
+
+.data_username{
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    color: #8e8e8e;
+    text-overflow: ellipsis;
+}
+
+.other_details{
+    margin-top:25px;
+    font-size: 18px;
+    color: #b9b4b4;
+    line-height:1.6em;
+    position: absolute;
+}
+
+.profile_user_data button{
+    float: right;
+    bottom: 0px;
+    margin-top: 16px;
+    padding: 8px 18px;
+}
+
+button.greyButton{
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid #e8e8e8;
+    color: #908b8b;
+    background: white;
+}
+
+button.greyButton:hover{
+    cursor:pointer;
+    background:#e8e8e8;
+}
+
+button.greyButton:focus{
+    outline:0;
+    background:#bfbfbf;
+}

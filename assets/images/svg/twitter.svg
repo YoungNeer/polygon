@@ -1,0 +1,24 @@
+<!--Twitter cloned by Neer(github/YoungNeer) for everyone-->
+<svg height="100%" viewBox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+	<circle
+		cx="16" cy="16"
+		fill="none" r="14"
+		stroke-width="4"
+		style="stroke: rgb(29, 161, 242); opacity: 0.2;"
+	></circle>
+	<circle
+		cx="16" cy="16"
+		fill="none" r="14"
+		stroke-width="4"
+		style="stroke: rgb(29, 161, 242); stroke-dasharray: 80; stroke-dashoffset: 60;"
+	>
+		<animateTransform
+			attributeName="transform"
+			type="rotate"
+			from="0 16 16"
+			to="360 16 16"
+			dur="1s"
+			repeatCount="indefinite"
+		/>
+	</circle>
+</svg>

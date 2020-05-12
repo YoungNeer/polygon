@@ -1,0 +1,233 @@
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+.loadedConvos{
+    margin-top:20px;
+    max-height: 220px;
+    overflow-y: scroll;
+}
+
+.loadedConvos hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.readMore{
+    float:right;
+    color: #5dbed8;
+    margin-right: 5px;
+}
+
+.profile_pic img{
+    height:80px;
+    margin-left:5px;
+}
+
+.conversations{
+    margin-top: 30px;
+    max-height: 400px;
+    overflow-y: hidden;
+}
+
+#loadedMessages{
+    display:flex;
+    flex-direction:column;
+    border: 1px solid #cdcdcd;
+    padding: 0px 5px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.conversationMessage{
+    min-height:85px;
+}
+
+.conversationMessage:hover{
+    cursor:pointer;
+    background: #eeecec;
+    border-radius: 5px;
+}
+
+.newMessage{
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 12px;
+}
+
+.lastMessageBody{
+    margin-top: 8px;
+}
+
+.send_message textarea{
+    width: 90%;
+    height: 35px;
+}
+
+.send_message input[type="submit"]{
+    width: 15%;
+    margin: 0px 5px;
+}
+
+.send_message .results{
+    margin-top:10px;
+}
+
+.message{
+    width:100%;
+    margin-bottom:15px;
+}
+
+.message span:hover{
+    cursor:pointer;
+}
+
+.message .green:active{
+    background:#79a644;
+}
+
+.message .blue:active{
+    background:#1fa0b0;
+}
+
+#message_text_area{
+    outline:none;
+    padding-left:8px;
+    font-size:16px;
+	border-radius:8px;
+	border-color: #b9b9b94f;
+    box-shadow: 0 2px 4px 0 rgba(14, 30, 37, .16);
+}
+
+.message span{
+    display:inline-block;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    min-width: 50px;
+    max-width: 270px;
+    padding:5px 10px;
+    border-radius: 15px;
+    color:ghostwhite;
+}
+
+.message .green{
+    float:left;
+    background:#8BC34A;
+    border-radius: 5px 25px 25px 5px;
+}
+
+.message .blue{
+    float:right;
+    padding-left: 20px;
+    text-align: right;
+    background:#00BCD4;
+    border-radius: 25px 5px 5px 25px;
+}
+
+.msgfeed form{
+    margin-bottom: 20px;
+}
+
+.msgfeed .blueButton{
+    width: 20%;
+    margin-left: 10px;
+}
+
+.name_field{
+    display: inline-block;
+    font-size: 22px;
+    padding-left: 10px;
+    height: 30px;
+    overflow: hidden;
+}
+
+@media (max-width: 575px) {
+    .name_field{
+        width: 200px;
+    }
+}
+
+@media (max-width: 450px) {
+    .name_field{
+        width: 100px;
+    }
+}
+
+.userProfileCard{
+    margin-left:5%;
+    margin-top:120px; /*TODO*/
+    width:50%;
+    max-width:350px;
+}
+
+.toasted_from{
+    max-height: 30px;
+    overflow: hidden;
+}
+
+.msgfeed{
+    min-width: 500px;
+    margin-left: 20px;
+    margin-right: 15px;
+    width: 65%;
+    max-width:720px;
+    margin-top: 120px;
+    margin-bottom:30px;
+}
+
+.user_profile_pic_main{
+    border-radius: 55px;
+    width: 100px;
+}
+
+.user_details{
+    height: 215px;
+}
+
+.data_username{
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    color: #8e8e8e;
+    text-overflow: ellipsis;
+}
+
+.other_details{
+    margin-top:25px;
+    font-size: 18px;
+    color: #b9b4b4;
+    line-height:1.6em;
+    position: absolute;
+}
+
+.profile_user_data button{
+    float: right;
+    bottom: 0px;
+    margin-top: 16px;
+    padding: 8px 18px;
+}
+
+button.greyButton{
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid #e8e8e8;
+    color: #908b8b;
+    background: white;
+}
+
+button.greyButton:hover{
+    cursor:pointer;
+    background:#e8e8e8;
+}
+
+button.greyButton:focus{
+    outline:0;
+    background:#bfbfbf;
+}

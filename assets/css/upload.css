@@ -1,0 +1,165 @@
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+  }
+
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+}
+
+body{
+    overflow-x:hidden;
+}
+
+main{
+	position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    width: 100vw;
+}
+
+p{
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0px;
+}
+
+input[type="file"]{
+    border: 1px dashed lightgrey;
+    padding: 10px;
+    width: 100%;
+    padding-left: 5px;
+}
+
+.column{
+	width: 80%;
+}
+
+.rainbowBtn{
+    display: block;
+    width: 100px;
+    height: 40px;
+    background-color: #333333;
+    border-radius: 20px;
+    font-family: Poppins-Medium;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    /* -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s; */
+    outline: none !important;
+    border: none;
+}
+
+.rainbowBtn:hover{
+    cursor:pointer;
+    top: 0;
+    left: 0;
+    background: #a64bf4;
+    background: -webkit-linear-gradient(45deg, #00dbde, #fc00ff);
+    background: -o-linear-gradient(45deg, #00dbde, #fc00ff);
+    background: -moz-linear-gradient(45deg, #00dbde, #fc00ff);
+    background: linear-gradient(45deg, #00dbde, #fc00ff);
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
+
+#CroppingContainer{
+    display:flex;
+}
+
+#CroppingArea{
+    width: 80%;
+    max-height: 400px;
+    position: relative;
+    overflow: scroll;
+    /* margin: 40px 0px 40px 40px; */
+    border: 2px #666 solid;
+    float: left;
+}
+
+.EngageArea{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    z-index:100;
+}
+
+#CropImageForm{
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    margin: 10px 0px 0px 40px;
+}
+
+#CropImageForm2{
+    width: 100px;
+    height: 30px;
+    margin: 10px 0px 0px 40px;
+    display: inline-block;
+}
+
+#InfoArea{
+    /* width: 180px; */
+    position: relative;
+    overflow: hidden;
+    margin: 40px 0px 0px 40px;
+    border: 0px #666 solid;
+    float: left;
+}
+
+.buttonsGroup{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width:750px){
+    #CroppingArea{
+        width:100%;
+    }
+    #CroppingContainer{
+        flex-direction:column;
+    }
+    .EngageArea{
+        /* flex-direction:row; */
+        width:100%;
+    }
+    #InfoArea{
+        width:100%;
+        margin: 20px 0px 0px 0px;
+    }
+    #CropImageForm{
+        margin-left: 0px;
+    }
+    #CropImageForm2{
+        margin-left: 100px;
+    }
+    .buttonsGroup{
+        display:block;
+    }
+}
+
+@media (max-width:530px){
+    .buttonsGroup{
+        display: flex;
+        flex-direction: column;
+    }
+    #CroppingArea{
+        width:100%;
+    }
+    #CropImageForm2{
+        margin: 10px 0px 0px 0px;
+    }
+}
